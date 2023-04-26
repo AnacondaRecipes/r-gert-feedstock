@@ -42,7 +42,7 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base {{ r_version }} 
     - r-askpass
     - r-credentials >=1.2.1
     - r-openssl >=2.0.3
@@ -50,7 +50,7 @@ requirements:
     - r-zip >=2.1.0
     - libgit2
   run:
-    - r-base
+    - r-base {{ r_version }} 
     - {{ native }}gcc-libs         # [win]
     - r-askpass
     - r-credentials >=1.2.1
