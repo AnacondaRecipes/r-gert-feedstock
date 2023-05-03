@@ -58,6 +58,8 @@ requirements:
     - r-rstudioapi >=0.11
     - r-sys
     - r-zip >=2.1.0
+    - libssh2
+    - openssl
 
 test:
   commands:
